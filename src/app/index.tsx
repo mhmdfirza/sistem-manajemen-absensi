@@ -1,21 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Redirect } from 'expo-router';
 
-const Home = () => {
-  return (
-    <View>
-      <Text>TABCD</Text>
-    </View>
-  );
-};
-
-const Testing = () => {
-  return (
-    <View>
-    </View>
-  );
-};
-
-export default Home;
-export { Testing };
-
-const styles = StyleSheet.create({});
+export default function Index() {
+  return <Redirect href={"/(dashboard)" as any} />;
+}
